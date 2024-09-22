@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div contenteditable="true" id="container">
+      <p class = "editable">Select some text in this paragraph to see it appear below.</p>
+      <p class = "editable">Try selecting <strong><em><u>text</u></em></strong> from <strong>mul</strong>tiple paragraphs as well.</p>
+    </div>
+
+    <div id="selection-box"></div>
+    <div id="html-box"></div>
+    <div id="style-box"></div>
+    <!-- Box to show current styles -->
+    <div id="char-style-box"></div>
+    <!-- Box to show character-specific styles -->
+
+	<div id="modalOverlay" style="display: none">
+      <div id="urlModal" class="cssanimation zoomIn">
+        <div id="modalContent">
+          <input type="text" id="urlInput" placeholder="Enter URL" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

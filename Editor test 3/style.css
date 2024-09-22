@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#editable-container {
+  flex: 1;
+  width: 728px;
+  margin: 0 auto;
+  border: 1px solid red;
+  min-width: 280px;
+  overflow-wrap: break-word;
+  padding: 7px;
+}
+
+#html-preview {
+  width: 80%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  border-left: 1px solid #ccc;
+}
+
+/* #editable-container:focus {
+   outline: none; 
+} */
+
+.editable {
+  border: 1px solid black;
+}
+
+#editable-container:focus {
+  border: 2px solid orange;
+  outline: none;
+}
+
+#editable-container > * {
+  padding: 7px;
+}
+
+p {
+  line-height: 1.6em;
+  min-height: 1.6em;
+}
+
+.command {
+  color: red;
+}

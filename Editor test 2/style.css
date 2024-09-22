@@ -1,0 +1,198 @@
+/* Ensure labels have the same width */
+.fixed-width-label {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top; /* Align labels with input fields */
+}
+
+/* Make input fields expand to fill the available space */
+input[type="text"] {
+  width: calc(100% - 120px);
+  box-sizing: border-box;
+}
+
+/* Align the <p> tag with the input fields */
+.aligned-content {
+  visibility: hidden;
+  display: flex;
+  align-items: center; /* Align the <p> vertically with the inputs */
+}
+
+.aligned-content p {
+  font-size: 12px;
+  color: red;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  width: calc(100% - 120px);
+  box-sizing: border-box;
+  padding-left: 8px; /* Add padding to align with inputs */
+}
+
+/* Center the buttons using flexbox */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Add spacing between the buttons */
+.button-container > * {
+  margin: 0 5px;
+}
+
+/* Ensure the div doesn't overflow its container */
+.image-form {
+  max-width: 100%;
+  background-color: #eeeeee;
+}
+
+.red {
+  color: red;
+}
+
+.image-form {
+  padding-left: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.image-form input[text]:focus {
+  border: 3px solid #ff6719 !important;
+}
+
+/* .image-form {
+  padding-left: 13px !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+} */
+
+/* ================FOR THE IMAGE AND IMAGE CONTAINER============================================================================================= */
+
+.captionedImageContainer {
+  margin: 32px auto 32px auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 32px;
+}
+
+figure {
+  width: 100%;
+  margin: 0 auto;
+}
+
+figcaption {
+  /* substack color */
+  /* color: #868787; */
+
+  /* medium color */
+  color: #525252;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+  margin-top: 8px;
+  width: 70%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+/* figcaption[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+   For Firefox 
+  display: block;  
+
+  color: #b6b6b6;
+} */
+
+figcaption .figcaption-placeholder-span {
+  color: #b3b3b1;
+  user-select: none !important; /* Prevent text selection */
+  -webkit-user-select: none !important; /* For Safari */
+  -moz-user-select: none !important; /* For Firefox */
+  -ms-user-select: none !important; /* For IE */
+  z-index: -2;
+}
+
+.imageContainer {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border: 0;
+  text-decoration: none;
+  overflow: hidden;
+  /* cursor: zoom-in; */
+  position: relative;
+}
+
+.imageContainer img {
+  border-radius: inherit;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+/* ================================CUSTOM FOR THIS DEMO============================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+#editable-container {
+  flex: 1;
+  padding: 20px;
+  border: 3px solid #ff6719;
+  width: 760px;
+  border-radius: 5px;
+  /* user-select: text; */
+}
+#editable-container > * {
+  padding: 7px;
+}
+#html-preview {
+  width: 80%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  /* border-left: 1px solid #ccc; */
+}
+.editable {
+  /* margin-bottom: 10px; */
+  /* padding: 10px; */
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+.editable:focus {
+  /* outline: 3px solid #ff6719; */
+  border: 2px solid #ff6719;
+  outline: none;
+
+  border-radius: 5px;
+}
+pre code {
+  display: block;
+  line-height: 20px;
+  min-height: 20px;
+  padding: 7px;
+  white-space: pre-wrap; /* Enables wrapping of long lines */
+  word-wrap: break-word; /* Breaks long words if necessary */
+}
+/* pre {
+    word-wrap: break-word;
+  } */
+
+/* ===================================================================================== */
+
+li {
+  border: none !important;
+}

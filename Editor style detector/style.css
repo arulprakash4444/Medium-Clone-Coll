@@ -1,0 +1,90 @@
+body {
+  height: 100vh;
+}
+
+#selection-box,
+#html-box,
+#style-box,
+#char-style-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  white-space: pre-wrap; /* Preserve whitespace formatting */
+}
+
+#selection-box,
+#style-box {
+  display: block; /* Visible by default */
+}
+
+/* FROM URL CODE========================================================================================================== */
+
+body.modal-active #container {
+  filter: blur(1.3px);
+}
+
+/* Modal overlay to cover the entire screen */
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal box */
+#urlModal {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 100px;
+  width: 50%; /* Set the width of the modal to 50% */
+  max-width: 700px; /* Optional: Limit the width for larger screens */
+  min-width: 400px;
+  text-align: center;
+  z-index: 2000;
+}
+
+/* Modal content styling */
+#modalContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align input and button */
+}
+
+#urlInput {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+}
+
+#urlInput:focus {
+  outline: none;
+}
+
+.cssanimation {
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+  display: inline-block;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
